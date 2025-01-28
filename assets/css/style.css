@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--sweb-primary: #141922;
+	--sweb-top-right: #080b12;
+	--sweb-left-nav:#000000;
+	--sweb-primary-text: #fdfdfd;
+	--sweb-sub-text: #7c7e83;
+	--sweb-footer-bg: #282828;
+	}
+
+	footer{
+		height: 100px;
+		background-color: var(--sweb-footer-bg);
+	}
