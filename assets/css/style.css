@@ -13,6 +13,32 @@
 	--sweb-footer-bg: #282828;
 	}
 
+	.d-flex{
+		display: flex;
+	}
+
+.left-nav{
+	background-color: var(--sweb-left-nav);
+	width: 50px;
+}
+
+.up-main{
+		background-color: var(--sweb-primary);
+
+		.upgrade{
+			height: 90px;
+			background-color: var(--sweb-top-right);
+		}
+	}
+
+main ul {
+	list-style: none;
+	gap: 1rem;
+	color: var(--sweb-sub-text);
+	text-transform: uppercase;
+	justify-content: center;
+}
+
 	footer{
 		height: 100px;
 		background-color: var(--sweb-footer-bg);
