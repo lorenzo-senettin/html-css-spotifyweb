@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --sweb-primary: #141922;
+    --sweb-top-right: #080b12;
+    --sweb-left-nav: #000000;
+    --sweb-primary-text: #fdfdfd;
+    --sweb-sub-text: #7c7e83;
+    --sweb-non-hover: #d2d2d2;
+    --sweb-footer-bg: #282828;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.song-title {
+    color: var(--sweb-primary-text);
+}
+
+.subtitle {
+    color: var(--sweb-sub-text);
+}
