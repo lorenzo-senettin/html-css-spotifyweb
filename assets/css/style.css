@@ -1,17 +1,38 @@
+@import url(./general.css);
+
 .left-nav {
 	background-color: var(--sweb-left-nav);
 	flex-direction: column;
 	padding: 0.5rem;
 	gap: 1rem;
+	width: 50px;
+	height: calc(100vh - 100px);
+	position: fixed;
 }
 
-.up-main {
+.upgrade {
 	height: 90px;
 	background-color: var(--sweb-top-right);
+	justify-content: end;
+	align-items: center;
+
+	button {
+		margin: 1rem;
+		padding: 0.5rem;
+		border: 1px solid var(--sweb-primary-text);
+		background-color: var(--sweb-top-right);
+		color: var(--sweb-primary-text);
+		text-transform: uppercase;
+		border-radius: 20px;
+	}
+
+
 }
 
 main {
 	background-color: var(--sweb-primary);
+	margin-left: 50px;
+
 
 	ul {
 		list-style: none;
@@ -19,6 +40,7 @@ main {
 		color: var(--sweb-sub-text);
 		text-transform: uppercase;
 		justify-content: center;
+		position: fixed;
 	}
 
 }
