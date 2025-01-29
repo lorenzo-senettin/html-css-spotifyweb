@@ -20,9 +20,9 @@
     display: flex;
 }
 
-.row {
-    flex-wrap: wrap;
-    padding: 1rem;
+.uppercase {
+    text-transform: uppercase;
+
 }
 
 .capitalize {
@@ -41,8 +41,14 @@
     color: var(--sweb-sub-text);
 }
 
-.radius {
-    border-radius: 50%;
+.upgrade-button {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--sweb-primary-text);
+    background-color: var(--sweb-top-right);
+    color: var(--sweb-primary-text);
+    text-transform: uppercase;
+    border-radius: 25px;
 }
 
 /* col */
@@ -94,4 +100,3 @@
 .col-11 {
     width: calc(100% / 12 * 11);
     height: auto;
-}
