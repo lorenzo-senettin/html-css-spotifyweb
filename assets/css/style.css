@@ -1,93 +1,41 @@
-@import url(./general.css);
-
-.top {
-	display: flex;
-	height: calc(100vh - 70px);
-
-	.sidebar {
-		width: 50px;
-		background-color: var(--sweb-left-nav);
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		overflow: hidden;
+@import url('./layout.css');
+@import url('./common.css');
+@import url('./sidebar.css');
 
 
-		.sidebar_top {
-			min-height: 300px;
-			background-color: var(--sweb-left-nav);
 
-			.nav-icon {
+main {
+
+	.album {
+
+		.cover_image {
+			position: relative;
+
+			.overlay {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: var(--sweb-top-right);
+				display: none;
+				font-size: 2rem;
+			}
+
+			img {
+				vertical-align: middle;
+			}
+
+
+			&:hover .overlay {
 				display: flex;
-				flex-direction: column;
 				align-items: center;
-				padding: 0.5rem;
-				gap: 1rem;
+				justify-content: center;
 			}
-		}
-
-		.sidebar_bottom {
-			min-height: 50px;
-			background-color: var(--sweb-left-nav);
-		}
 
 
-
-
-	}
-
-	main {
-		width: calc(100% - 50px);
-		background-color: var(--sweb-primary);
-		overflow-y: auto;
-
-		height: 100%;
-
-		ul {
-			list-style: none;
-			gap: 2rem;
-			color: var(--sweb-sub-text);
-			text-transform: uppercase;
-			justify-content: center;
-			flex-wrap: wrap;
-
-		}
-
-		.upgrade {
-			background-color: var(--sweb-top-right);
-			position: sticky;
-			top: 0;
-			right: 0;
-			width: 100%;
-			text-align: end;
-			padding: 1rem;
-		}
-
-		section {
-			padding: 1rem;
-		}
-
-		.albums {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 1rem;
-
-			.album {
-				min-height: 250px;
-				width: calc(100% / 2 - 1rem);
-			}
-		}
-
-		.section-name {
-			color: var(--sweb-primary-text);
 		}
 
 	}
 
-}
-
-.bottom {
-	background-color: var(--sweb-footer-bg);
-	height: 70px;
 }

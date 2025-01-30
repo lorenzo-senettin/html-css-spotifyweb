@@ -1,0 +1,122 @@
+@import url('./common.css');
+
+.top {
+    display: flex;
+    height: calc(100vh - 70px);
+    background-color: var(--sweb-top-right);
+
+    .sidebar {
+        width: 50px;
+        background-color: var(--sweb-left-nav);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+
+        .sidebar_top {
+            min-height: 300px;
+            /*  background-color: gray; */
+        }
+
+        .sidebar_bottom {
+            min-height: 50px;
+            /*  background-color: gray; */
+        }
+
+
+        @media screen and (min-width: 600px) {
+            width: 220px;
+
+        }
+
+    }
+
+    main {
+        width: calc(100% - 50px);
+        background-color: var(--sweb-primary);
+        overflow-y: auto;
+
+        height: 100%;
+
+        .upgrade {
+            background-color: var(--sweb-top-right);
+            position: sticky;
+            top: 0;
+            right: 0;
+            width: 100%;
+            text-align: end;
+            padding: 1rem;
+
+            .upgrade-button {
+                margin: 1rem;
+                padding: 1rem;
+                border: 1px solid var(--sweb-primary-text);
+                background-color: var(--sweb-top-right);
+                color: var(--sweb-primary-text);
+                text-transform: uppercase;
+                border-radius: 25px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            gap: 2rem;
+            color: var(--sweb-sub-text);
+            text-transform: uppercase;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        section {
+            padding: 1rem;
+        }
+
+        .albums {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            .album {
+                min-height: 250px;
+                width: calc(100% / 2 - 1rem);
+            }
+        }
+
+
+
+
+        @media screen and (min-width: 600px) {
+            width: calc(100% - 220px);
+
+        }
+
+
+        @media screen and (min-width: 768px) {
+
+            .albums .album {
+                width: calc(100% / 4 - 1rem);
+
+            }
+
+        }
+
+        @media screen and (min-width: 992px) {
+
+            .albums .album {
+                width: calc(100% / 6 - 1rem);
+
+            }
+
+        }
+
+    }
+
+}
+
+
+.bottom {
+    height: 70px;
+    background-color: #333;
+}

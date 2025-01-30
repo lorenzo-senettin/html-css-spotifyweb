@@ -1,0 +1,180 @@
+.sidebar {
+
+	/* Logo */
+	.logo {
+		padding: 0.5rem;
+		text-align: center;
+
+		.logo_desktop {
+			display: none;
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 1rem;
+			text-align: start;
+
+
+			.logo_mobile {
+				display: none;
+			}
+
+			.logo_desktop {
+				display: inline-block;
+			}
+		}
+
+
+	}
+
+	/* Main Menu */
+
+	.main_menu {
+		ul {
+			list-style: none;
+			line-height: 2rem;
+			text-align: center;
+
+
+			a {
+				text-decoration: none;
+				color: white;
+
+				span {
+					display: none;
+				}
+			}
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 1rem;
+
+			ul {
+				text-align: left;
+
+				a {
+
+					img {
+						vertical-align: middle;
+					}
+
+					span {
+						display: inline;
+						vertical-align: middle;
+					}
+				}
+			}
+
+		}
+
+
+	}
+
+	/* Playlist */
+	.playlist {
+		display: none;
+		color: gray;
+
+		h3 {
+			color: white;
+			text-transform: uppercase;
+		}
+
+		.add {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			padding: 0.5rem 0;
+		}
+
+
+		ul.playlist_items {
+			list-style: none;
+			line-height: 2rem;
+		}
+
+
+
+
+		@media screen and (min-width: 600px) {
+			padding: 1rem;
+			display: block;
+
+			.playlist_items {
+				overflow-y: auto;
+				height: calc(100vh - 70px - 400px);
+			}
+
+		}
+
+	}
+
+
+	/* Sidebar Bottom */
+
+
+	.sidebar_bottom {
+		text-align: center;
+		background-color: black;
+
+		.install {
+
+			padding-bottom: .25rem;
+
+			span {
+				display: none;
+
+			}
+
+		}
+
+		.profile {
+
+			padding-top: 1rem;
+
+			img {
+				aspect-ratio: 1;
+				background-color: gray;
+				border-radius: 50%;
+			}
+
+			strong {
+				display: none;
+			}
+
+		}
+
+
+
+		@media screen and (min-width: 600px) {
+
+			text-align: left;
+			padding: 1rem;
+
+			color: gray;
+
+			.install {
+				border-bottom: 1px solid;
+			}
+
+			.install span,
+			.profile strong {
+				display: inline;
+			}
+
+			.install,
+			.profile {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+			}
+
+
+		}
+
+
+	}
+
+}

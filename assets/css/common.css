@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 500ms;
+}
+
+:root {
+    --sweb-primary: #141922;
+    --sweb-top-right: #080b12c2;
+    --sweb-left-nav: #000000;
+    --sweb-primary-text: #fdfdfd;
+    --sweb-sub-text: #7c7e83;
+    --sweb-non-hover: #d2d2d2;
+    --sweb-footer-bg: #282828;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    h2 {
+        padding: 1rem 0;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.text-none {
+    text-transform: none;
+}
+
+.radius {
+    border-radius: 50%;
+}
+
+.song-title {
+    color: var(--sweb-primary-text);
+}
+
+.subtitle {
+    color: var(--sweb-sub-text);
+}
+
+.section-name {
+    color: var(--sweb-primary-text);
+}
